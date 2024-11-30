@@ -103,3 +103,10 @@ levelSelector.addEventListener("change", (event) => {
 
 // Инициализация с темами Frontend (по умолчанию)
 updateTopics("frontend");
+
+document.getElementsByClassName("apply-button")[0].addEventListener('click', () => {
+    location.href="https://forms.yandex.ru/u/674b54a902848f11ba1de026/"
+})
+document.getElementsByClassName("start-button")[0].addEventListener('click', () => {
+    location.href="https://forms.yandex.ru/u/674b54a902848f11ba1de026/"
+})
