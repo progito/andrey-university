@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отзывы - ANDREY-UNIVERSITY</title>
+  <link rel="stylesheet" href="./css/stylesReviews.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/coursesStyles.css">
+  <link rel="stylesheet" href="css/analytics.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <div class="logo">
+            <img src="../assets/logo.png" alt="Andrei University Logo">
+          </div>
+          <nav class="navigation">
+            <a href="../index.html">Главная</a>
+            <a href="./pages">Обучение</a>
+            <a href="./pages/analytics.html" >Диагностика</a>
+            <a href="./pages/reviews.html" class="active">Отзывы</a>
+          </nav>
+          <div class="actions">
+            <button class="login">Войти</button>
+            <button class="signup">Начать бесплатно</button>
+          </div>
+        </div>
+    </header>  
+  <div class="container2">
+    <!-- Секция 1: Отзывы с Авито -->
+    <section class="section">
+      <h2>Отзывы с Авито</h2>
+      <p>Наши реальные отзывы вы можете увидеть и на платформе Авито. Перейдите по ссылке, чтобы ознакомиться с мнениями наших студентов:</p>
+      <a href="https://www.avito.ru/brands/6e0cb0cddc648005af5493893eebd49d/all/predlozheniya_uslug?gdlkerfdnwq=101&page_from=from_item_card&iid=4722343181&sellerId=4a35bc6b1ba8ac0f4838cdd03bc91053" target="_blank" class="button">Посмотреть отзывы на Авито</a>
+    </section>
+
+    <section class="section">
+        <h2>Отзывы с Отзовик</h2>
+        <p>Наши реальные отзывы вы можете увидеть, также на платформе Отзовик. Перейдите по ссылке, чтобы ознакомиться с мнениями наших студентов:</p>
+        <a href="https://www.avito.ru/brands/6e0cb0cddc648005af5493893eebd49d/all/predlozheniya_uslug?gdlkerfdnwq=101&page_from=from_item_card&iid=4722343181&sellerId=4a35bc6b1ba8ac0f4838cdd03bc91053" target="_blank" class="button">Посмотреть отзывы на Отзовик</a>
+    </section>
+
+    <!-- Секция 2: Отзывы из Telegram -->
+    
+    <section class="section">
+        <h2>Отзывы из Telegram</h2>
+        <p>Скриншоты реальных отзывов наших студентов (из телеграм):</p>
+        <div class="reviews-gallery">
+          <img src="../assets/imgs_reviews/telegram/1.png" alt="Отзыв 1" class="review-img">
+          <img src="../assets/imgs_reviews/telegram/2.png" alt="Отзыв 2" class="review-img">
+          <img src="../assets/imgs_reviews/telegram/3.png" alt="Отзыв 3" class="review-img">
+          <!-- Добавьте больше изображений при необходимости -->
+        </div>
+    </section>
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+    <!-- Секция 3: Карусель отзывов -->
+    <section class="section">
+        <h2>Отзывы о нас</h2>
+        <div class="carousel">
+          <div class="carousel-item">
+            <h3>“Лучший курс!”</h3>
+            <p>Курс: <strong>Junior Python Developer</strong></p>
+            <p>Автор: Алексей Григов <span class="stars">★★★★★</span></p>
+            <p>Благодаря курсу нашел работу всего за 3 месяца. Теперь работаю Junior Python разработчиком с зарплатой 70к. Отличная поддержка от наставников.</p>
+          </div>
+      
+          <div class="carousel-item">
+            <h3>“Все четко и понятно”</h3>
+            <p>Курс: <strong>Junior Frontend Developer</strong></p>
+            <p>Автор: Мария Смирнова <span class="stars">★★★★☆</span></p>
+            <p>Курс структурирован идеально, много практики. Рекомендую всем, кто хочет легко войти в IT.</p>
+          </div>
+      
+          <div class="carousel-item">
+            <h3>“Получил Middle ураа!!!”</h3>
+            <p>Курс: <strong>Middle Frontend Developer</strong></p>
+            <p>Автор: Валентин Орлов <span class="stars">★★★★★</span></p>
+            <p>Повысил свои навыки до уровня Middle разработчика в области Frontend. Наставники поддерживали и давали точные советы. Проектная работа помогла уверенно чувствовать себя на собеседовании.</p>
+          </div>
+      
+          <!-- Новый отзыв 1 -->
+          <div class="carousel-item">
+            <h3>“Готов работать в IT!”</h3>
+            <p>Курс: <strong>Junior Frontend Developer</strong></p>
+            <p>Автор: Ольга Киселова <span class="stars">★★★★★</span></p>
+            <p>Прошла курс по Frontend разработке, много практики, и теперь я уверена в своих силах. После курса начала проходить собеседования и уже получила предложение!</p>
+          </div>
+      
+          <!-- Новый отзыв 2 -->
+          <div class="carousel-item">
+            <h3>“Невероятно полезный опыт”</h3>
+            <p>Курс: <strong>Junior Python Developer</strong></p>
+            <p>Автор: Дмитрий Наваренко <span class="stars">★★★★★</span></p>
+            <p>Этот курс дал мне не только знания, но и уверенность в себе. Понял основы Python и уже начал работать на фрилансе, решая реальные задачи для клиентов.</p>
+          </div>
+      
+          <!-- Новый отзыв 3 -->
+          <div class="carousel-item">
+            <h3>“Реальная помощь в трудоустройстве”</h3>
+            <p>Курс: <strong>Junior Frontend Developer</strong></p>
+            <p>Автор: Наталья Жеванюк <span class="stars">★★★★★</span></p>
+            <p>Благодаря курсу смогла улучшить свои навыки и найти работу в крупной компании. Все благодаря реальным проектам и качественной обратной связи от наставников.</p>
+          </div>
+      
+          <!-- Новый отзыв 4 -->
+          <div class="carousel-item">
+            <h3>“Прекрасная подача материала”</h3>
+            <p>Курс: <strong>Junior Python Developer</strong></p>
+            <p>Автор: Екатерина Лебедева <span class="stars">★★★★☆</span></p>
+            <p>Понравилась структура курса, доступные объяснения и практика. Прошла курс и теперь успешно работаю Junior Python разработчиком в стартапе.</p>
+          </div>
+      
+          <!-- Новый отзыв 5 -->
+          <div class="carousel-item">
+            <h3>“Курс дал уверенность!”</h3>
+            <p>Курс: <strong>Middle Frontend Developer</strong></p>
+            <p>Автор: Дмитрий Федоров <span class="stars">★★★★★</span></p>
+            <p>Очень доволен курсом! Благодаря наставникам и качественной обратной связи смог развить свои навыки и получить предложение от крупной компании.</p>
+          </div>
+      
+          <!-- Новый отзыв 6 -->
+          <div class="carousel-item">
+            <h3>“Отличный старт для карьеры”</h3>
+            <p>Курс: <strong>Junior Frontend Developer</strong></p>
+            <p>Автор: Иван Колинов <span class="stars">★★★★★</span></p>
+            <p>Прошел курс, научился основам HTML, CSS и JavaScript. Благодаря курсу устроился на первую работу в IT, очень благодарен наставникам.</p>
+          </div>
+      
+          <!-- Новый отзыв 7 -->
+          <div class="carousel-item">
+            <h3>“Лучший опыт в обучении”</h3>
+            <p>Курс: <strong>Junior Python Developer</strong></p>
+            <p>Автор: Ирина Волкова <span class="stars">★★★★☆</span></p>
+            <p>С курсом я наконец-то поняла, как программировать на Python. Очень понравился подход и количество практики. Сейчас начинаю работать на фрилансе.</p>
+          </div>
+      
+          <!-- Новый отзыв 8 -->
+          <div class="carousel-item">
+            <h3>“Рекомендую всем”</h3>
+            <p>Курс: <strong>Junior Frontend Developer</strong></p>
+            <p>Автор: Алексей Дмитриев <span class="stars">★★★★☆</span></p>
+            <p>Понравился курс, очень много полезных знаний и практики. Работал с реальными проектами и получил массу полезной информации для дальнейшей работы в Frontend.</p>
+          </div>
+      
+        </div>
+    </section>
+      
+  </div>
+  <footer>
+    <div class="footer-container">
+      <!-- Верхняя часть футера -->
+      <div class="footer-top">
+        <!-- Логотип и описание -->
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="../assets/logo.png" alt="Andrei University Logo"> <!-- Замените на путь к вашему логотипу -->
+          </div>
+          <p class="footer-description">
+            Помогаем людям освоить современные технологии и навыки — от веб-разработки и Python до уверенного использования компьютера, чтобы открыть новые возможности и построить успешную карьеру в IT.
+          </p>
+          <p class="footer-contacts">
+            Moscow<br>
+            10:00–20:00 MSK<br>
+            <a href="mailto:hello@result.school">hello@result.school</a><br>Контактный центр
+          </p>
+        </div>
+  
+        <!-- Меню: Обучение -->
+        <div class="footer-section">
+          <h4>Обучение</h4>
+          <ul>
+            <li><a href="#courses">Junior Frontend-разработчик</a></li>
+            <li><a href="#courses">Middle Frontend-разработчик</a></li>
+            <li><a href="#courses">Junior Python-разработчик</a></li>
+            <li><a href="#courses">Бесплатные курсы</a></li>
+            <li><a href="#courses">Все курсы</a></li>
+          </ul>
+        </div>
+  
+        <!-- Меню: Проекты -->
+        <div class="footer-section">
+          <h4>Проекты</h4>
+          <ul>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Диагностика</a></li>
+            <li><a href="#">Roadmap</a></li>
+          </ul>
+        </div>
+  
+        <!-- Меню: О компании -->
+        <div class="footer-section">
+          <h4>О Андрее</h4>
+          <ul>
+            <li><a href="#">О Андрее</a></li>
+            <li><a href="#">Вакансии University</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Нижняя часть футера -->
+      <div class="footer-bottom">
+        <div class="footer-policy">
+          <a href="https://telegra.ph/Soglashenie-s-obuchayushchimisya-11-30">Условия и трудоустройство</a>
+        </div>
+        <p>© 2024 Andrei University</p>
+      </div>
+    </div>
+</footer>
+  <script src="../js/reviewsScript.js"></script>
+</body>
+</html>

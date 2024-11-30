@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(to bottom, #f0f8ff, #e6f2ff);  /* Градиентный фон */
+    color: #333;
+    line-height: 1.8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Центрируем по верху */
+    height: 100%;
+    min-height: 100vh;  /* Минимальная высота страницы - экран */
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out;
+    overflow-y: auto;  /* Включаем прокрутку, если нужно */
+}
+
+body:hover {
+    background: linear-gradient(to bottom, #e6f2ff, #f0f8ff);  /* Эффект на фоне при наведении */
+}
+
+.container {
+    background-color: #ffffff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px;
+    margin-top: 20px;  /* Отступ сверху */
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+    max-height: 100vh;  /* Ограничиваем максимальную высоту */
+    overflow: auto;  /* Включаем прокрутку внутри контейнера */
+}
+
+.container:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+    
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 25px;
+    border: 6px solid #f0f8ff; /* Светлая рамка */
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1); /* Эффект увеличения при наведении */
+}
+
+h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #dfe6e9; /* Легкая линия под заголовком */
+    padding-bottom: 10px;
+}
+
+p, ul {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    text-align:justify;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+li:hover {
+    color: #3498db; /* Эффект при наведении */
+}
+
+footer {
+    background-color: #f8f9fa;
+    color: #7f8c8d;
+    text-align: center;
+    padding: 25px 0;
+    border-top: 1px solid #ecf0f1;
+    margin-top: 60px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #ecf0f1;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+canvas {
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 1024px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p, ul {
+        font-size: 1rem;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p, ul {
+        font-size: 0.9rem;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p, ul {
+        font-size: 0.8rem;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/coursesStyles.css">
+    <link rel="stylesheet" href="css/analytics.css">
+    <title>Курс</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <div class="logo">
+            <img src="../assets/logo.png" alt="Andrei University Logo">
+          </div>
+          <nav class="navigation">
+            <a href="../index.html">Главная</a>
+            <a href="./pages">Обучение</a>
+            <a href="./pages/analytics.html" class="active">Диагностика</a>
+            <a href="./pages/reviews.html">Отзывы</a>
+          </nav>
+          <div class="actions">
+            <button class="login">Войти</button>
+            <button class="signup">Начать бесплатно</button>
+          </div>
+        </div>
+    </header>  
+    
+    <section class="diagnostic-section">
+        <div class="diagnostic-container">
+            <div class="diagnostic-header">
+
+                <h1>Программа обучения <span id="course-title"></span></h1>
+                <p id="course-description"></p>
+                <button class="apply-button" id="buy2">Записаться на курс</button>
+            </div>
+    
+            <!-- Секция с преимуществами диагностики -->
+            <div class="diagnostic-benefits"id="course-tags">
+                <!-- тут типа будет как раз tags ["", ..] -->
+                <div class="benefit-item" >
+                    <i class="fa-solid fa-gift"></i>
+                    <p>Обучение на удобной платформе</p>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    
+    <section class="diagnostic-why-section">
+        <div class="diagnostic-why-container" id="faq-questions">
+            <div class="diagnostic-illustration">
+                <!-- Добавьте вашу SVG или изображение -->
+                <img src="../assets/analytics.png" alt="Диагностика" />
+            </div>
+        </div>
+    </section>
+
+    <section class="program-section">
+        <div class="program">
+            <h2>Программа обучения</h2>
+            <div id="course-program"></div>
+            <button id="buy">Записаться на курс</button>
+        </div>
+        
+    </section>
+    
+    <section class="certificate-section">
+        <h2>Получите сертификат по завершении обучения!</h2>
+        <p>
+          По окончании курса вы получите сертификат, подтверждающий ваши навыки и знания. 
+          Этот документ станет вашим преимуществом при трудоустройстве или развитии карьеры.
+        </p>
+    </section>
+    <!-- Training Program Section -->
+    
+    <section class="mentor-section">
+        <h1>Какая программа для вас комфортнее?</h1>
+        <p class="description">
+            Это эксперт, который имеет опыт в frontend и делится им с учениками. Его основная цель — довести студента до трудоустройства и помочь ему вырасти профессионально.
+        </p>
+        
+        <div class="container3">
+            <div class="content">
+                <div class="mentor-image">
+                    <img src="../assets/mentor.png" alt="Mentor">
+                </div>
+                <div class="price">
+                    <p id="summa"></p> <span class="currency">рублей за курс</span>
+                </div>
+            </div>
+            <div>
+                <div class="tabs">
+                    <button class="tab active" onclick="switchTab('with-mentor')">С наставником<br><span id="wn"></span> месяцев</button>
+                    <button class="tab" onclick="switchTab('without-mentor')">Без наставника<br><span id="nn"></span> месяцев</button>
+                </div>
+                <div class="info-cards" id="with-mentor">
+                    <div class="card">
+                        <h3>Доступ к курсу</h3>
+                        <p>Получите доступ ко всему курсу (ко всем материалам).</p>
+                    </div>
+                    <div class="card">
+                        <h3>Гарантия трудоустройства</h3>
+                        <p>Гарантируем трудоуйстройство после прохождения курса или вернем деньги за обучение.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Проверяем домашнее задание</h3>
+                        <p>Наставник знает, как решать задачи, с которыми вы сталкиваетесь впервые. Он проверяет работы, дает фидбек и делится советами.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Учит самостоятельно искать решения</h3>
+                        <p>Наставник подскажет, как выполнить задание, но не даст готового решения. Так вы научитесь искать информацию самостоятельно.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Созвоны с учениками</h3>
+                        <p>Когда вам сложно понять тему и разговор с наставником в чате не помогает, вы можете созвониться и решить вопрос в «прямом эфире».</p>
+                    </div>
+                    <div class="card">
+                        <h3>Тестовые технические собеседования</h3>
+                        <p>У наставника есть большой опыт в разработке. В конце технического собеседования он проконсультирует вас и подсветит пробелы в знаниях.</p>
+                    </div>
+                </div>
+                <div class="info-cards hidden" id="without-mentor">
+                    <div class="card">
+                        <h3>Доступ к курсу</h3>
+                        <p>Получите доступ ко всему курсу (ко всем материалам).</p>
+                    </div>
+                    <div class="card">
+                        <h3>НЕТ Гарантии трудоустройства</h3>
+                        <p>Здесь мы не гарантируем трудоуйстройство после прохождения курса.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Учитесь самостоятельно</h3>
+                        <p>Вы будете искать информацию в интернете, разбираться с заданиями без посторонней помощи, что позволит развить ваши навыки.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Без проверки</h3>
+                        <p>Работы не проверяются, так что ваша самооценка станет ключевым показателем выполнения заданий.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+          <!-- Верхняя часть футера -->
+          <div class="footer-top">
+            <!-- Логотип и описание -->
+            <div class="footer-section">
+              <div class="footer-logo">
+                <img src="../assets/logo.png" alt="Andrei University Logo"> <!-- Замените на путь к вашему логотипу -->
+              </div>
+              <p class="footer-description">
+                Помогаем людям освоить современные технологии и навыки — от веб-разработки и Python до уверенного использования компьютера, чтобы открыть новые возможности и построить успешную карьеру в IT.
+              </p>
+              <p class="footer-contacts">
+                Moscow<br>
+                10:00–20:00 MSK<br>
+                <a href="mailto:hello@result.school">hello@result.school</a><br>Контактный центр
+              </p>
+            </div>
+      
+            <!-- Меню: Обучение -->
+            <div class="footer-section">
+              <h4>Обучение</h4>
+              <ul>
+                <li><a href="#courses">Junior Frontend-разработчик</a></li>
+                <li><a href="#courses">Middle Frontend-разработчик</a></li>
+                <li><a href="#courses">Junior Python-разработчик</a></li>
+                <li><a href="#courses">Бесплатные курсы</a></li>
+                <li><a href="#courses">Все курсы</a></li>
+              </ul>
+            </div>
+      
+            <!-- Меню: Проекты -->
+            <div class="footer-section">
+              <h4>Проекты</h4>
+              <ul>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Диагностика</a></li>
+                <li><a href="#">Roadmap</a></li>
+              </ul>
+            </div>
+      
+            <!-- Меню: О компании -->
+            <div class="footer-section">
+              <h4>О Андрее</h4>
+              <ul>
+                <li><a href="#">О Андрее</a></li>
+                <li><a href="#">Вакансии University</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <!-- Нижняя часть футера -->
+          <div class="footer-bottom">
+            <div class="footer-policy">
+              <a href="https://telegra.ph/Soglashenie-s-obuchayushchimisya-11-30">Условия и трудоустройство</a>
+            </div>
+            <p>© 2024 Andrei University</p>
+          </div>
+        </div>
+    </footer>
+    <script src="../js/courseScript2.js">
+        
+    </script>
+    
+</body>
+</html>

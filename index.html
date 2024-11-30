@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/coursesStyles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <div class="logo">
+            <img src="./assets/logo.png" alt="Andrei University Logo">
+          </div>
+          <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          
+          <div class="mobile-nav">
+              <nav class="navigation">
+                  <a href="#" class="active">Главная</a>
+                  <a href="#courses">Обучение</a>
+                  <a href="./pages/analytics.html">Диагностика</a>
+                  <a href="./pages/reviews.html">Отзывы</a>
+              </nav>
+          </div>
+          
+          <div class="actions">
+              <button class="login">Войти</button>
+              <button class="signup">Начать бесплатно</button>
+          </div>
+        </div>
+    </header>  
+    <section class="welcome">
+        <div class="container">
+          <div class="welcome-text">
+            <h1>Получите профессию программиста-разработчика и постройте карьеру в IT</h1>
+            <p>Устроитесь на работу мечты с нашей гарантией трудоустройства.</p>
+            <button class="btn-primary">Выбрать обучение</button>
+          </div>
+          <div class="welcome-icons">
+            <div class="icon react"><i class="fa-brands fa-react"></i></div>
+            <div class="icon js"><i class="fa-brands fa-js"></i></div>
+            <div class="icon redux"><i class="fa-brands fa-redhat"></i></div>
+            <div class="icon vue"><i class="fa-brands fa-vuejs"></i></div>
+            <div class="icon git"><i class="fa-brands fa-git-alt"></i></div>
+            <div class="icon node"><i class="fa-brands fa-node-js"></i></div>
+          </div>
+          <div class="welcome-features">
+            <div class="feature">
+              <i id="star" class="fa-solid fa-star"></i>
+              <p>Пользователи оценивают наши программы обучения на <b>9,7</b></p>
+            </div>
+            <div class="feature">
+              <i id="calendar" class="fa-solid fa-calendar"></i>
+              <p><b>5 лет</b> занимаемся обучением</p>
+            </div>
+            <div class="feature">
+              <i id="group" class="fa-solid fa-user-group"></i>
+              <p>Сопровождение от наставников уровня <b>middle+</b> и даже <b>senior</b></p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="video-section">
+        <div class="container">
+          <div class="video-wrapper">
+            <video controls>
+              <source src="your-video-file.mp4" type="video/mp4">
+              Ваш браузер не поддерживает воспроизведение видео.
+            </video>
+          </div>
+        </div>
+    </section>
+    <section class="courses-section" id="courses">
+        <!-- Панель поиска и фильтрации -->
+        <div class="course-controls">
+            <input type="text" class="search-input" placeholder="Поиск курсов..." oninput="filterCourses()" />
+            <select class="sort-select" onchange="sortCourses()">
+                <option value="default">Сортировка</option>
+                <option value="asc">По возрастанию цены</option>
+                <option value="desc">По убыванию цены</option>
+            </select>
+        </div>
+        <div id="course-cards-container">
+            <!-- Карточки курсов -->
+        <div class="course-cards">
+            <!-- Карточка курса -->
+            <div class="course-card" data-id="frontend">
+              <div class="course-text">
+                <h3 class="course-title">Junior Frontend Разработчик </h3>
+                <div class="course-price">
+                    <span class="standart-price">57,000 руб</span>
+                </div>
+                <div class="course-tags">
+                  <span class="tag">HTML & CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Frontend</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">Основы Git/Github</span>
+                  <span class="tag">React</span>
+                  <span class="tag">Redux</span>
+                  <span class="tag">Основы Backend</span>
+                  <span class="tag">TypeScript</span>
+                </div>
+                <p class="course-description">
+                  Воплотите свои идеи в жизнь и станьте создателем современных интерфейсов! Освойте все ключевые технологии, необходимые для работы фронтенд-разработчиком, и начните создавать впечатляющие веб-приложения, которые вдохновляют пользователей.
+                </p>
+                <div class="course-duration">С нуля • 2-3 месяца</div>
+              </div>
+              <img src="assets/imgs_course/F.jpg" alt="JavaScript Course" class="course-image" />
+            </div>
+          </div>
+          
+      
+          <div class="course-cards">
+            <!-- Карточка курса -->
+            <div class="course-card" data-id="python">
+              <div class="course-text">
+                <h3 class="course-title">Junior Python Разработчик</h3>
+                <div class="course-price">
+                    <span class="standart-price">29,800 руб</span>
+                </div>
+                <div class="course-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">IDE</span>
+                  <span class="tag">ООП</span>
+                  <span class="tag">Алгоритмы и Структуры данных</span>
+                  <span class="tag">Основы Git/Github</span>
+                  <span class="tag">Модули и библиотеки</span>
+                  <span class="tag">Тестирование ПО</span>
+                </div>
+                <div class="course-tags">
+                  <span class="tag">SQLite & MySQL</span>
+                  <span class="tag">Основы Django/Flask/Fast API</span>
+                </div>
+                <p class="course-description">
+                  Воплотите свои идеи в жизнь и станьте создателем современных интерфейсов! Освойте все ключевые технологии, необходимые для работы фронтенд-разработчиком, и начните создавать впечатляющие веб-приложения, которые вдохновляют пользователей.
+                </p>
+                <div class="course-duration">С нуля • 2 месяца</div>
+              </div>
+              <img src="assets/imgs_course/P.jpg" alt="JavaScript Course" class="course-image" />
+            </div>
+          </div>
+          <div class="course-cards">
+            <!-- Карточка курса -->
+            <div class="course-card" data-id="html">
+              <div class="course-text">
+                <h3 class="course-title">Основы HTML </h3>
+                <div class="course-price">
+                    <span class="standart-price">Бесплатно</span>
+                </div>
+                <div class="course-tags">
+                  <span class="tag">Основы работы с HTML</span>
+                  <span class="tag">Теги и Элементы</span>
+                  <span class="tag">Атрибуты тегов</span>
+                  <span class="tag">HTML5</span>
+                  <span class="tag">Семантика</span>
+                  <span class="tag">Практическое применение</span>
+                </div>
+                
+                <p class="course-description">
+                  Воплотите свои идеи в жизнь и станьте создателем современных интерфейсов! Освойте все ключевые технологии, необходимые для работы фронтенд-разработчиком, и начните создавать впечатляющие веб-приложения, которые вдохновляют пользователей.
+                </p>
+                <div class="course-duration">С нуля • 1-2 недели</div>
+              </div>
+              <img src="assets/imgs_course/H.jpg" alt="JavaScript Course" class="course-image" />
+            </div>
+          </div>
+          <div class="course-cards">
+            <!-- Карточка курса -->
+            <div class="course-card" data-id="ejob">
+              <div class="course-text">
+                <h3 class="course-title">Накрутка опыта работы </h3>
+                <div class="course-price">
+                    <span class="standart-price">1,990 руб</span>
+                </div>
+                <div class="course-tags">
+                  <span class="tag">Как получить опыт работы?</span>
+                  <span class="tag">Опыт работы</span>
+                  <span class="tag">Практика</span>
+                </div>
+                
+                <p class="course-description">
+                  Воплотите свои идеи в жизнь и станьте создателем современных интерфейсов! Освойте все ключевые технологии, необходимые для работы фронтенд-разработчиком, и начните создавать впечатляющие веб-приложения, которые вдохновляют пользователей.
+                </p>
+                <div class="course-duration">С нуля • менее 1 недели</div>
+              </div>
+              <img src="assets/imgs_course/О.jpg" alt="JavaScript Course" class="course-image" />
+            </div>
+          </div>
+          <div class="course-cards">
+            <!-- Карточка курса -->
+            <div class="course-card" data-id="git">
+              <div class="course-text">
+                <h3 class="course-title">Основы GIT </h3>
+                <div class="course-price">
+                    <span class="standart-price">2,099 руб</span>
+                </div>
+                <div class="course-tags">
+                  <span class="tag">Основы работы с GIT</span>
+                  <span class="tag">Github</span>
+                  <span class="tag">Gitlab</span>
+                  <span class="tag">PR, FORK, ..</span>
+                  <span class="tag">Team Work</span>
+                  <span class="tag">Практическое применение</span>
+                </div>
+                
+                <p class="course-description">
+                  Воплотите свои идеи в жизнь и станьте создателем современных интерфейсов! Освойте все ключевые технологии, необходимые для работы фронтенд-разработчиком, и начните создавать впечатляющие веб-приложения, которые вдохновляют пользователей.
+                </p>
+                <div class="course-duration">С нуля • 1-2 недели</div>
+              </div>
+              <img src="assets/imgs_course/G.jpg" alt="JavaScript Course" class="course-image" />
+            </div>
+          </div>
+          <div class="course-cards">
+            <!-- Карточка курса -->
+            <div class="course-card" data-id="mfrontend">
+              <div class="course-text">
+                <h3 class="course-title">Middle Frontend Разработчик </h3>
+                <div class="course-price">
+                    <span class="old-price">70,000 руб</span>
+                    <span class="new-price">59,500 руб</span>
+                    <span class="discount">-15%</span>
+                </div>
+                <div class="course-tags">
+                  <span class="tag">Основы работы с компьютером</span>
+                  <span class="tag">Windows OS</span>
+                  <span class="tag">CMD</span>
+                  <span class="tag">Основы работы с WORD/EXCEL</span>
+                  <span class="tag">Системные настройки</span>
+                </div>
+                
+                <p class="course-description">
+                  Воплотите свои идеи в жизнь и станьте создателем современных интерфейсов! Освойте все ключевые технологии, необходимые для работы фронтенд-разработчиком, и начните создавать впечатляющие веб-приложения, которые вдохновляют пользователей.
+                </p>
+                <div class="course-duration">Для профессионалов • 3-4 месяца</div>
+              </div>
+              <img src="assets/imgs_course/FPlus.jpg" alt="JavaScript Course" class="course-image" />
+            </div>
+          </div>
+        </div>
+          <div class="course-cards">
+            <!-- Карточка курса -->
+            <div class="course-card" data-id="pcjob">
+              <div class="course-text">
+                <h3 class="course-title">Основы работы с компьютером </h3>
+                <div class="course-price">
+                    <span class="standart-price">1,490 руб</span>
+                </div>
+                <div class="course-tags">
+                  <span class="tag">Основы работы с компьютером</span>
+                  <span class="tag">Windows OS</span>
+                  <span class="tag">CMD</span>
+                  <span class="tag">Основы работы с WORD/EXCEL</span>
+                  <span class="tag">Системные настройки</span>
+                </div>
+                
+                <p class="course-description">
+                  Воплотите свои идеи в жизнь и станьте создателем современных интерфейсов! Освойте все ключевые технологии, необходимые для работы фронтенд-разработчиком, и начните создавать впечатляющие веб-приложения, которые вдохновляют пользователей.
+                </p>
+                <div class="course-duration">С нуля • 1 неделя</div>
+              </div>
+              <img src="assets/imgs_course/PC.jpg" alt="JavaScript Course" class="course-image" />
+            </div>
+          </div>
+        </div>
+        
+    </section>
+    <section class="promo-section">
+        <div class="promo-card">
+          <div class="promo-content">
+            <h2>Пригласите друга и получите скидку до 20%!</h2>
+            <p>Делитесь своими успехами — помогите друзьям начать обучение и получите скидку на любой из наших курсов. Ваш друг тоже получит бонус!</p>
+            <a href="#" class="promo-button">Получить скидку</a>
+          </div>
+        </div>
+    </section>
+      
+      
+    <footer>
+        <div class="footer-container">
+          <!-- Верхняя часть футера -->
+          <div class="footer-top">
+            <!-- Логотип и описание -->
+            <div class="footer-section">
+              <div class="footer-logo">
+                <img src="assets/logo.png" alt="Andrei University Logo"> <!-- Замените на путь к вашему логотипу -->
+              </div>
+              <p class="footer-description">
+                Помогаем людям освоить современные технологии и навыки — от веб-разработки и Python до уверенного использования компьютера, чтобы открыть новые возможности и построить успешную карьеру в IT.
+              </p>
+              <p class="footer-contacts">
+                Moscow<br>
+                10:00–20:00 MSK<br>
+                <a href="mailto:hello@result.school">hello@result.school</a><br>Контактный центр
+              </p>
+            </div>
+      
+            <!-- Меню: Обучение -->
+            <div class="footer-section">
+              <h4>Обучение</h4>
+              <ul>
+                <li><a href="./pages/course.html?id=frontend">Junior Frontend-разработчик</a></li>
+                <li><a href="./pages/course.html?id=mfrontend">Middle Frontend-разработчик</a></li>
+                <li><a href="./pages/course.html?id=python">Junior Python-разработчик</a></li>
+                <li><a href="#courses">Бесплатные курсы</a></li>
+                <li><a href="#courses">Все курсы</a></li>
+              </ul>
+            </div>
+      
+            <!-- Меню: Проекты -->
+            <div class="footer-section">
+              <h4>Проекты</h4>
+              <ul>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="./pages/analytics.html">Диагностика</a></li>
+                <li><a href="#">Roadmap</a></li>
+              </ul>
+            </div>
+      
+            <!-- Меню: О компании -->
+            <div class="footer-section">
+              <h4>О Андрее</h4>
+              <ul>
+                <li><a href="./pages/andrei.html">О Андрее</a></li>
+                <li><a href="#">Вакансии University</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <!-- Нижняя часть футера -->
+          <div class="footer-bottom">
+            <div class="footer-policy">
+              <a href="https://telegra.ph/Soglashenie-s-obuchayushchimisya-11-30">Условия и трудоустройство</a>
+            </div>
+            <p>© 2024 Andrei University</p>
+          </div>
+        </div>
+    </footer>
+      
+          
+        
+    <script src="js/headerScript.js"></script>    
+    <script src="js/courseScript.js"></script>    
+</body>
+</html>

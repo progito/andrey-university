@@ -1,0 +1,423 @@
+/* Секция курсов */
+.courses-section {
+    padding: 40px 20px;
+    max-width: 1200px; /* Максимальная ширина секции */
+    margin: 0 auto; /* Центрируем секцию по горизонтали */
+    background-color: #f9f9f9; /* Светлый фон секции */
+    border-radius: 10px;
+}
+
+/* Панель поиска и фильтрации */
+.course-controls {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение элементов */
+    align-items: center; /* Выравнивание по вертикали */
+    margin-bottom: 30px;
+    gap: 20px; /* Пространство между элементами */
+}
+
+.search-input {
+    flex: 1; /* Растягиваем поле поиска на всю ширину */
+    max-width: 900px; /* Максимальная ширина поля */
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.sort-select {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-input:focus, .sort-select:focus {
+    box-shadow: 0 0 5px rgba(250, 117, 117, 0.8);
+    outline: none;
+}
+.course-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #aaa; /* Серый цвет */
+    font-size: 14px;
+  }
+  
+  .new-price {
+    color: #e63946; /* Красный цвет для акцента */
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .discount {
+    background-color: #ff6b6b; /* Ярко-красный фон */
+    color: #fff; /* Белый текст */
+    font-weight: bold;
+    font-size: 14px;
+    padding: 3px 8px;
+    border-radius: 5px;
+  }
+  .standart-price {
+    color: #242424; /* Серый цвет текста */
+    font-size: 18px; /* Чуть меньший размер шрифта */
+    margin-right: 10px; /* Отступ справа для расстояния между ценами */
+  }
+  
+/* Уточнение для небольших экранов */
+@media (max-width: 768px) {
+    .course-controls {
+        flex-direction: column; /* Элементы друг под другом */
+        align-items: stretch; /* Растягиваем элементы на всю ширину */
+        gap: 15px;
+    }
+
+    .search-input {
+        max-width: 100%; /* Убираем ограничение ширины */
+    }
+}
+
+
+.sort-select {
+    cursor: pointer;
+}
+
+
+
+/* Карточки курсов */
+.course-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+.course-cards:hover {
+  transform: scale(1.02);
+}
+.course-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Появление карточек */
+.course-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Текстовая часть карточки */
+.course-text {
+    flex: 1;
+}
+
+.course-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.course-tags {
+    margin-bottom: 10px;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(24, 24, 24);
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+}
+
+
+
+.course-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.course-duration {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+
+/* Картинка курса */
+.course-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #f1f1f1;
+    transition: transform 0.3s ease;
+}
+
+.course-image:hover {
+    transform: rotate(3deg) scale(1.05);
+}
+
+/* Стили для цен */
+.blue1 {
+    position: relative;
+    top: -5px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: rgb(153, 153, 153);
+    font-weight: bold;
+    color: white;
+}
+
+.blue2 {
+    position: relative;
+    top: -5px;
+    border-radius: 5px;
+    padding: 8px 12px;
+    background-color: rgb(239, 123, 123);
+    font-weight: bold;
+    color: white;
+}
+
+  /* Общий стиль футера */
+footer {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .footer-container {
+    max-width: 1200px; /* Ограничение ширины футера */
+    margin: 0 auto; /* Центрирование */
+  }
+  
+  /* Верхняя часть футера */
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Отступ между колонками */
+    margin-bottom: 30px;
+  }
+  
+  /* Секция футера */
+  .footer-section {
+    flex: 1;
+    min-width: 250px; /* Минимальная ширина колонок */
+  }
+  
+  .footer-logo img {
+    max-width: 150px; /* Размер логотипа */
+    margin-bottom: 15px;
+  }
+  
+  .footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .footer-contacts a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .footer-contacts a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-section h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section ul li a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Нижняя часть футера */
+  .footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-policy a {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .footer-policy a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social a {
+    margin-right: 10px;
+  }
+  
+  .footer-social img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+  }
+  
+  .footer-social img:hover {
+    filter: grayscale(0%);
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+  }
+  .promo-section {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    padding: 60px 20px;
+
+  }
+  
+  .promo-card {
+    background: url('../assets/promo-bg.png') no-repeat center center/cover; /* Фон для карточки */
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 3000px; /* Ширина карточки */
+    border-radius: 15px; /* Закругленные края */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Тень */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Полупрозрачный затемняющий слой */
+  .promo-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Затемнение */
+    z-index: 1;
+    border-radius: 15px; /* Закругление для затемнения */
+  }
+  
+  .promo-content {
+    position: relative;
+    z-index: 2; /* Поверх затемняющего слоя */
+  }
+  
+  .promo-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .promo-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .promo-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff6a00;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px; /* Закругленные края кнопки */
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .promo-button:hover {
+    background-color: #e65b00;
+    transform: scale(1.05); /* Легкое увеличение кнопки при наведении */
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .promo-card {
+      padding: 30px 15px;
+    }
+  
+    .promo-content h2 {
+      font-size: 22px;
+    }
+  
+    .promo-content p {
+      font-size: 14px;
+    }
+  
+    .promo-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  

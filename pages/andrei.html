@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О Андрее</title>
+    <link rel="stylesheet" href="css/andrei.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <img src="../assets/user.jpg" alt="Андрей" class="profile-img">
+                <h1>Обо Андрее</h1>
+            </div>
+        </header>
+        
+        <section id="about">
+            <h2>Моя история</h2>
+            <p>В школе я изучал Паскаль, и он мне сразу не понравился, я думал, что потерял интерес к программированию. Но потом я познакомился с языком <strong>LUA</strong> и начал писать простые скрипты, создал сервер для <em>MTA GTA SA</em>.</p>
+            <p>Позже я понял, что с <strong>LUA</strong> далеко не уеду, и начал изучать другие языки, в том числе <strong>Python</strong>, который изучал самостоятельно. В 2021 году я получил сертификацию Python Core, а в 2022 году — C++ Core.</p>
+            <p>В конце 2022 года я был зачислен на курсы Гарвардского Университета, где прошел два специализированных курса и в мае 2023 года получил сертификацию. Итоговым проектом стала шифровальная машинка, написанная на <strong>HTML, CSS и JavaScript</strong>, использующая собственный алгоритм Шмит.</p>
+            <p>В 2023 году я начал изучать <strong>Ionic React</strong> и написал маркетплейс для кодеров, а также платформу с образованием будущего, построенную на ИИ ChatGPT. Я также предложил концепцию фриланса будущего без общения и капчи кода.</p>
+            <p>В сентябре 2023 года я основал компанию Mercado App Los Lugares Limited в Лондоне, которая проработала ровно год, а в июле 2024 года было принято решение закрыть её. Сейчас я работаю в стартапе по ИИ, разрабатываю чатботов и являюсь ведущим фронтенд-разработчиком.</p>
+            <p>Я также преподаю с февраля 2022 года.</p>
+        </section>
+
+        <section class="education">
+            <h2>Образование</h2>
+            <ul>
+                <li><strong>Специалист Computer Science</strong> — Гарвардский Университет, 2023</li>
+                <li><strong>Программист Разработчик</strong> — Самарский Аэрокосмический Университет, 2021 - наст.вр</li>
+            </ul>
+        </section>
+
+        <section class="achievements">
+            <h2>Достижения</h2>
+            <ul>
+                <li>Получил сертификацию от Гарварда</li>
+                <li>Основал компанию в Лондоне по маркетплейсу</li>
+                <li>Участвовал в хакатоне от Яндекс</li>
+                <li>Знаю более 8 языков программирования (LUA, Python, C, C++, Python, основы C#, JS, TS, NASM)</li>
+                <li>Получил знания по ИИ от компании IBM (в сентябре 2024 года)</li>
+                <li>Реализовал более 100 различных проектов</li>
+            </ul>
+        </section>
+
+        <section class="statistics">
+            <h2>Статистика за годы</h2>
+            <canvas id="statsChart" width="400" height="200"></canvas>
+        </section>
+
+        <footer>
+            <p>© 2024 Все права защищены</p>
+        </footer>
+    </div>
+
+    <script>
+        var ctx = document.getElementById('statsChart').getContext('2d');
+        var statsChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2016',  '2017','2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+                datasets: [{
+                    label: 'Достижения по годам',
+                    data: [7, 5, 10, 15, 25, 18, 24, 40],
+                    borderColor: 'rgba(33, 150, 243, 1)', /* Голубой */
+                    backgroundColor: 'rgba(33, 150, 243, 0.2)', /* Голубой */
+                    borderWidth: 2,
+                    pointBackgroundColor: 'rgba(33, 150, 243, 1)', /* Цвет точек */
+                    pointBorderColor: '#fff', /* Белая обводка точек */
+                    pointBorderWidth: 2,
+                    pointRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Достижения Андрея по годам'
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItem) {
+                                const year = tooltipItem[0].label;
+                                switch(year) {
+                                    case '2017':
+                                        return 'Знакомство с Паскалем'
+                                    case '2018':
+                                        return 'Знакомство с LUA, Скрипты LUA'
+                                    case '2019':
+                                        return 'Создание мини-сервера для MTA GTA SA + изучение Python';
+                                    case '2020':
+                                        return 'Написание телеграм ботов на Python + изучение pyqt';
+                                    case '2021':
+                                        return 'Получение сертификации Python Core. Junior+ Python Разработчик';
+                                    case '2022':
+                                        return 'Изучение языка C + Сертификация C++ Core. Middle Python Разработчик';
+                                    case '2023':
+                                        return 'Создание маркетплейса для кодеров, платформа с ИИ ChatGPT';
+                                    case '2024':
+                                        return 'Стартап по ИИ, ведущий фронтенд-разработчик';
+                                    default:
+                                        return year;
+                                }
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 5
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
