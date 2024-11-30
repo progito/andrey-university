@@ -404,7 +404,7 @@ footer {
     position: relative; /* Устанавливаем контекст для позиционирования дочерних элементов */
 }
 
-.price {
+.price2 {
     position: absolute; /* Абсолютное позиционирование относительно родителя .content */
     top: 260px; /* Отступ сверху внутри .content */
 
@@ -423,7 +423,7 @@ footer {
     color: rgb(213, 213, 213); /* Цвет числа */
 }
 
-.price .currency {
+.price2 .currency {
     color: rgb(137, 200, 137); /* Зелёный цвет для "рублей за курс" */
     font-weight: bold; /* Жирный текст */
 }

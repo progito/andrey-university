@@ -1,0 +1,74 @@
+.vacancy-section {
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .vacancies {
+    margin-top: 20px;
+  }
+  
+  .vacancy {
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vacancy-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .vacancy-header:hover {
+    background: #f0f0f0;
+  }
+  
+  .toggle-icon {
+    font-size: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .vacancy-header.active .toggle-icon {
+    transform: rotate(45deg); /* Поворачивает "+" на "x" */
+  }
+  
+  .vacancy-details {
+    display: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .vacancy-details h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #000;
+  }
+  
+  .vacancy-details ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  

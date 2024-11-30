@@ -11,7 +11,7 @@ const courses = {
         title: "Junior Frontend Разработчик",
         summa: ["57000", "15099"],
         description: "Освойте востребованную профессию и начните карьеру в IT! Гарантия трудоустройтва и качество обучения.",
-        url: "https://andrey-university.getcourse.ru/html",
+        url: "https://andrey-university.getcourse.ru/jfrontend",
         nast: ["4", "от 2 до 3"],
         tags: [
             { icon: "fa-solid fa-laptop-code", text: "Изучите HTML, CSS и JavaScript с нуля" },
@@ -143,7 +143,7 @@ const courses = {
         title: "Middle Frontend Разработчик",
         summa: ["59500", "17500"],
         description: "Освойте профессиональные навыки разработки, станьте Middle Frontend разработчиком и начните успешную карьеру в IT.",
-        url: "https://andrey-university.getcourse.ru/mfrontend",
+        url: "https://andrey-university.getcourse.ru/page5",
         nast: ["5", "от 2 до 3"],
         tags: [
             { icon: "fa-solid fa-laptop-code", text: "Продвинутая работа с JavaScript" },
@@ -279,7 +279,7 @@ const courses = {
         summa: ["29800", "9000"],
         description: "Освойте Python для работы с данными и backend-разработки. Гарантия трудоустройтва и качество обучения.",
         nast: ["3", "от 1 до 2"],
-        url: "https://andrey-university.getcourse.ru/html",
+        url: "https://andrey-university.getcourse.ru/page4",
         tags: [
             { icon: "fa-solid fa-python", text: "Освойте Python для начинающих" },
             { icon: "fa-solid fa-database", text: "Научитесь работать с базами данных" },
@@ -428,7 +428,7 @@ const courses = {
     git: {
         title: "Основы Git",
         description: "Освойте Git с нуля и научитесь эффективно работать с GitHub/GitLab.",
-        url: "https://andrey-university.getcourse.ru/git",
+        url: "https://andrey-university.getcourse.ru/page6",
         tags: [
             { icon: "fa-solid fa-code-branch", text: "Изучите основы Git" },
             { icon: "fa-solid fa-cloud", text: "Работа с GitHub и GitLab" },
@@ -480,7 +480,7 @@ const courses = {
     pcjob: {
         title: "Основы работы с компьютером",
         description: "Освойте основные навыки работы с ПК, файловыми системами и базовыми программами.",
-        url: "https://andrey-university.getcourse.ru/pc",
+        url: "https://andrey-university.getcourse.ru/page7",
         tags: [
             { icon: "fa-solid fa-desktop", text: "Навыки работы с ПК" },
             { icon: "fa-solid fa-folder-open", text: "Работа с файлами и папками" },
@@ -528,7 +528,7 @@ const courses = {
     ejob: {
         title: "Накрутка опыта работы",
         description: "Освойте навыки, которые помогут вам создать впечатляющее резюме с примерами выполненных проектов и имитацией коммерческого опыта.",
-        url: "https://andrey-university.getcourse.ru/job",
+        url: "https://andrey-university.getcourse.ru/page8",
         tags: [
             { icon: "fa-solid fa-briefcase", text: "Создание опыта для резюме" },
             { icon: "fa-solid fa-project-diagram", text: "Имитация коммерческих проектов" },

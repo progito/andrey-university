@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/vacancy.css">
+    <title>Вакансии</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/coursesStyles.css">
+    <link rel="stylesheet" href="css/analytics.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <div class="logo">
+            <img src="../assets/logo.png" alt="Andrei University Logo">
+          </div>
+          <nav class="navigation">
+            <a href="../index.html">Главная</a>
+            <a href="../index.html#courses">Обучение</a>
+            <a href="./analytics.html" class="active">Диагностика</a>
+            <a href="./reviews.html">Отзывы</a>
+          </nav>
+          <div class="actions">
+            <button class="login">Войти</button>
+            <button class="signup">Начать бесплатно</button>
+          </div>
+        </div>
+    </header> 
+    <section class="vacancy-section">
+        <div class="header">
+          <h1>Кто нам нужен</h1>
+          <p>Мы ищем талантливых специалистов, готовых присоединиться к нашему университету.</p>
+        </div>
+        
+        <div class="vacancies">
+          <div class="vacancy ">
+            <div class="vacancy-header active" onclick="toggleVacancy(this)">
+              <h2>Преподаватель</h2>
+              <span class="toggle-icon">+</span>
+            </div>
+            <div class="vacancy-details">
+              <h3>Требования:</h3>
+              <ul>
+                <li>Опыт работы преподавателем от 1-2 года.</li>
+                <li>Знание современных технологий обучения.</li>
+                <li>Готовность к работе с группами студентов.</li>
+                <li>Базовые знания математики и компьютерных навыков.</li>
+                <li>Умение работать с документацией.</li>
+                <li>Ответственность и организованность.</li>
+                <li>Знание либо Python (в частности backend), либо JS (в частности frontend).</li>
+              </ul>
+              <h3>Условия труда:</h3>
+              <ul>
+                <li>Заработная плата: 30% от цены курса с каждого ученика</li>
+                <li>График: до 10-15 часов в неделю.</li>
+                <li>Доступ к ресурсам университета.</li>
+                <li>Удаленная работа</li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="vacancy">
+            <div class="vacancy-header" onclick="toggleVacancy(this)">
+              <h2>Специалист-консультант в чат</h2>
+              <span class="toggle-icon">+</span>
+            </div>
+            <div class="vacancy-details">
+              <h3>Требования:</h3>
+              <ul>
+                <li>Базовые умение граммотно и вежливо общаться.</li>
+                <li>Умение работать с документацией и серфить интернет.</li>
+                <li>Опыт работы не обязателен в целом на эту должность.</li>
+              </ul>
+              <h3>Условия труда:</h3>
+              <ul>
+                <li>Заработная плата: 30% от цены курса с каждого ученика (которого привели)</li>
+                <li>График: 15-20 часов в неделю.</li>
+                <li>Удаленная работа</li>
+              </ul>
+            </div>
+          </div>
+          <div class="vacancy">
+            <div class="vacancy-header" onclick="toggleVacancy(this)">
+              <h2>Волонтер</h2>
+              <span class="toggle-icon">+</span>
+            </div>
+            <div class="vacancy-details">
+              <h3>Требования:</h3>
+              <ul>
+                <li>Базовые умение программировать.</li>
+                <li>Умение работать с документацией и серфить интернет.</li>
+                <li>Опыт работы не обязателен в целом на эту должность.</li>
+              </ul>
+              <h3>Условия труда:</h3>
+              <ul>
+                <li>Заработная плата: -</li>
+                <li>График: до 10 часов в неделю.</li>
+                <li>Удаленная работа</li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+    </section>  
+    <footer>
+        <div class="footer-container">
+          <!-- Верхняя часть футера -->
+          <div class="footer-top">
+            <!-- Логотип и описание -->
+            <div class="footer-section">
+              <div class="footer-logo">
+                <img src="../assets/logo.png" alt="Andrei University Logo"> <!-- Замените на путь к вашему логотипу -->
+              </div>
+              <p class="footer-description">
+                Помогаем людям освоить современные технологии и навыки — от веб-разработки и Python до уверенного использования компьютера, чтобы открыть новые возможности и построить успешную карьеру в IT.
+              </p>
+              <p class="footer-contacts">
+                Moscow<br>
+                10:00–20:00 MSK<br>
+                <a href="mailto:andrei.ok@list.ru">andrei.ok@list.ru</a><br>Контактный центр
+                
+              </p>
+            </div>
+      
+            <!-- Меню: Обучение -->
+            <div class="footer-section">
+              <h4>Обучение</h4>
+              <ul>
+                <li><a href="../pages/course.html?id=frontend">Junior Frontend-разработчик</a></li>
+                <li><a href="../pages/course.html?id=mfrontend">Middle Frontend-разработчик</a></li>
+                <li><a href="../pages/course.html?id=python">Junior Python-разработчик</a></li>
+                <li><a href="../index.html#courses">Бесплатные курсы</a></li>
+                <li><a href="../index.html#courses">Все курсы</a></li>
+              </ul>
+            </div>
+      
+            <!-- Меню: Проекты -->
+            <div class="footer-section">
+              <h4>Проекты</h4>
+              <ul>
+                <li><a href="../pages/reviews.html">Отзывы</a></li>
+                <li><a href="../pages/analytics.html">Диагностика</a></li>
+                <li><a href="https://roadmap.sh/">Roadmap</a></li>
+              </ul>
+            </div>
+      
+            <!-- Меню: О компании -->
+            <div class="footer-section">
+              <h4>О Андрее</h4>
+              <ul>
+                <li><a href="../pages/andrei.html">О Андрее</a></li>
+                <li><a href="../pages/vacancy.html">Вакансии University</a></li>
+                <li><a href="https://telegra.ph/Kontakty-11-30-7">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <!-- Нижняя часть футера -->
+          <div class="footer-bottom">
+            <div class="footer-policy">
+              <a href="https://telegra.ph/Soglashenie-s-obuchayushchimisya-11-30">Условия и трудоустройство</a>
+            </div>
+            <p>© 2024 ANDREY-UNIVERSITY</p>
+          </div>
+        </div>
+    </footer>
+    <script src="../js/vacancyScript.js"></script>
+</body>
+</html>

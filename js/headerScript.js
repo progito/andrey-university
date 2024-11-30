@@ -128,4 +128,9 @@ document.querySelector('.btn-primary').addEventListener('click', () => {
     document.querySelector('#courses').scrollIntoView({
         behavior: 'smooth' // Добавляет плавную прокрутку
     });
-});
+})
+
+document.getElementsByClassName("login")[0].addEventListener('click', ()=>{
+    window.location.href="https://andrey-university.getcourse.ru/cms/system/login"
+})
+document.getElementsByClassName("signup")[0].addEventListener('click',()=>{location.href='#courses'})
