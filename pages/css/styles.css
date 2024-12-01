@@ -577,6 +577,10 @@
   border-color: #4880df;
 }
 
+#course-program {
+  margin-bottom: 30px;
+}
+
 .hidden {
   display: none;
 }

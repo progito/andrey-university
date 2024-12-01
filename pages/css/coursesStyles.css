@@ -584,7 +584,10 @@ footer {
     opacity: 1;
     z-index: 1;
 }
-
+a {
+  
+  text-decoration: none;
+}
 .competitor-card.previous {
     transform: translateY(-100%);
 }

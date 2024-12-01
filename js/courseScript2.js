@@ -11,7 +11,7 @@ const courses = {
     frontend: {
         title: "Junior Frontend Разработчик",
         summa: ["23990", "7250"],
-        concurent: ["23,990", "199,500", "137,000", "140,000"],
+        concurent: ["23,990", "199,500", "137,000", "140,000", "120,000"],
         cardsInfo: [
             {
                 header: "Проекты на курсе",
@@ -172,7 +172,7 @@ const courses = {
     mfrontend: {
         title: "Middle Frontend Разработчик",
         summa: ["32800", "9990"],
-        concurent: ["32,800", "169,000", "173,000", "214,000"],
+        concurent: ["32,800", "169,000", "173,000", "214,000", "150,000"],
         cardsInfo: [
             {
                 header: "Проекты на курсе",
@@ -336,7 +336,7 @@ const courses = {
     python: {
         title: "Junior Python Разработчик",
         summa: ["17990", "5800"],
-        concurent: ["17,990", "169,000", "173,000", "214,000"],
+        concurent: ["17,990", "169,000", "173,000", "214,000", "100,000"],
         cardsInfo: [
             {
                 header: "Проекты на курсе",
@@ -715,8 +715,7 @@ if (course) {
     });
     const btn = document.getElementById("buy");
     btn.addEventListener('click', ()=>{window.location.href=course.url})
-    const btn2 = document.getElementById("buy2");
-    btn2.addEventListener('click', ()=>{window.location.href=course.url})
+
     // Training Program Section
     const programContainer = document.getElementById('course-program');
     course.program.forEach((module, index) => {
