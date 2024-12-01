@@ -698,6 +698,9 @@ if (course.nast) {
 
 } else {
     document.getElementsByClassName("mentor-section")[0].style.display = "none"
+    document.getElementById("section1").style.display = "none"
+    document.getElementById("section2").style.display = "none"
+    document.getElementById("section3").style.display = "none"
 }
 
 
