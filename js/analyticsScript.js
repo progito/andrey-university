@@ -110,3 +110,18 @@ document.getElementsByClassName("apply-button")[0].addEventListener('click', () 
 document.getElementsByClassName("start-button")[0].addEventListener('click', () => {
     location.href="https://forms.yandex.ru/u/674b54a902848f11ba1de026/"
 })
+function searchVideos() {
+    const searchInput = document.getElementById("video-search-input").value.toLowerCase();
+    const videoCards = document.querySelectorAll(".video-card");
+
+    videoCards.forEach((card) => {
+        const title = card.dataset.title.toLowerCase();
+        const description = card.dataset.description.toLowerCase();
+
+        if (title.includes(searchInput) || description.includes(searchInput)) {
+            card.style.display = "flex";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}

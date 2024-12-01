@@ -285,7 +285,7 @@
   
   /* Обёртка для видео */
   .video-wrapper {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     aspect-ratio: 16 / 9; /* Соотношение сторон видео */
     border-radius: 16px; /* Более сильное закругление */
@@ -302,9 +302,9 @@
   }
   
   /* Видео */
-  .video-wrapper video {
-    width: 1000px; /* Полная ширина контейнера */
-    height: 580px; /* Полная высота контейнера */
+  .video-wrapper iframe {
+    width: 1200px; /* Полная ширина контейнера */
+    height: 680px; /* Полная высота контейнера */
     object-fit: cover; /* Контент обрезается по контейнеру */
     border: none;
   }

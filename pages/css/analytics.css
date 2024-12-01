@@ -147,6 +147,94 @@
     height: auto; /* Сохраняет пропорции изображения */
     border-radius: 10px; /* Скругление изображения, если нужно */
 }
+.diagnostic-illustration2 img {
+    max-width: 460px; 
+    height: auto; /* Сохраняет пропорции изображения */
+    border-radius: 10px; /* Скругление изображения, если нужно */
+}
+.video-search {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f9f9f9, #eaeaea);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 15px;
+    font-size: 1.2em;
+    border: 2px solid #ddd;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: #007bff;
+}
+
+.search-bar button {
+    padding: 15px 25px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #0056b3;
+}
+
+.video-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.video-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-thumbnail iframe {
+    width: 300px;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.video-details h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.video-details p {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+}
 
 .section-header {
     text-align: center;

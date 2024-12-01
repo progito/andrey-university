@@ -787,6 +787,21 @@ const cards = document.querySelectorAll(".competitor-card");
             // Добавить класс "current" к новой карточке
             cards[currentIndex].classList.add("current");
 }
+function searchVideos() {
+    const searchInput = document.getElementById("video-search-input").value.toLowerCase();
+    const videoCards = document.querySelectorAll(".video-card");
+
+    videoCards.forEach((card) => {
+        const title = card.dataset.title.toLowerCase();
+        const description = card.dataset.description.toLowerCase();
+
+        if (title.includes(searchInput) || description.includes(searchInput)) {
+            card.style.display = "flex";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
 
 // Автоматическое переключение карточек каждые 5 секунд
 setInterval(rotateCards, 5000);
