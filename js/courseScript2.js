@@ -5,11 +5,41 @@ const wn = document.getElementById("wn");
 const nn = document.getElementById("nn");
 const summa = document.getElementById("summa");
 
+
 // Данные о курсах
 const courses = {
     frontend: {
         title: "Junior Frontend Разработчик",
-        summa: ["57000", "15099"],
+        summa: ["23990", "7250"],
+        concurent: ["23,990", "199,500", "137,000", "140,000"],
+        cardsInfo: [
+            {
+                header: "Проекты на курсе",
+                description: "Реализуйте практические проекты на JavaScript и HTML/CSS, которые помогут вам стать junior-разработчиком.",
+                listItems: [
+                    "Проект: Лэндинг с адаптивной версткой",
+                    "Проект: Простой To-Do List с LocalStorage",
+                    "Проект: Конвертер валют с использованием API",
+                    "Проект: Галерея изображений с модальным окном",
+                    "Проект: Чат с использованием WebSocket (Mock)",
+                    "Проект: Интерактивный калькулятор",
+                    "Проект: SPA на чистом JavaScript",
+                    "Проект: Игра 'Крестики-нолики'",
+                    "Проект: Таблица с сортировкой и фильтрацией",
+                    "... и другие"
+                ]
+            },
+            {
+                header: "Гарантия трудоустройства",
+                description: "Мы поможем вам найти первую работу в IT, если вы выполните все условия курса.",
+                listItems: [
+                    "Сданы все работы и тесты",
+                    "Завершён итоговый проект",
+                    "Соблюдены все рекомендации преподавателей",
+                    "Курс пройден на 100%"
+                ]
+            }
+        ],
         description: "Освойте востребованную профессию и начните карьеру в IT! Гарантия трудоустройтва и качество обучения.",
         url: "https://andrey-university.getcourse.ru/jfrontend",
         nast: ["4", "от 2 до 3"],
@@ -25,7 +55,7 @@ const courses = {
         ],
         faq: [
             { question: "Кто такие фронтенд разработчики?", answer: "Это специалисты, которые создают пользовательские интерфейсы сайтов и приложений." },
-            { question: "Сколько зарабатывает Junior?", answer: "Средний заработок Junior Frontend разработчика составляет около 60,000 руб/мес." }
+            { question: "Сколько зарабатывает Junior?", answer: "Средний заработок Junior Frontend разработчика составляет около 70,000 руб/мес." }
         ],
         program: [
             { module: "Вступительный модуль", topics: [
@@ -141,7 +171,36 @@ const courses = {
     },
     mfrontend: {
         title: "Middle Frontend Разработчик",
-        summa: ["59500", "17500"],
+        summa: ["32800", "9990"],
+        concurent: ["32,800", "169,000", "173,000", "214,000"],
+        cardsInfo: [
+            {
+                header: "Проекты на курсе",
+                description: "Реализуйте практические проекты на JavaScript и HTML/CSS, которые помогут вам стать junior-разработчиком.",
+                listItems: [
+                    "Проект: Лэндинг с адаптивной версткой",
+                    "Проект: Простой To-Do List с LocalStorage",
+                    "Проект: Конвертер валют с использованием API",
+                    "Проект: Галерея изображений с модальным окном",
+                    "Проект: Чат с использованием WebSocket (Mock)",
+                    "Проект: Интерактивный калькулятор",
+                    "Проект: SPA на чистом JavaScript",
+                    "Проект: Игра 'Крестики-нолики'",
+                    "Проект: Таблица с сортировкой и фильтрацией",
+                    "... и другие"
+                ]
+            },
+            {
+                header: "Гарантия трудоустройства",
+                description: "Мы поможем вам найти первую работу в IT, если вы выполните все условия курса.",
+                listItems: [
+                    "Сданы все работы и тесты",
+                    "Завершён итоговый проект",
+                    "Соблюдены все рекомендации преподавателей",
+                    "Курс пройден на 100%"
+                ]
+            }
+        ],
         description: "Освойте профессиональные навыки разработки, станьте Middle Frontend разработчиком и начните успешную карьеру в IT.",
         url: "https://andrey-university.getcourse.ru/page5",
         nast: ["5", "от 2 до 3"],
@@ -157,9 +216,9 @@ const courses = {
         ],
         faq: [
             { question: "Для кого подходит этот курс?", answer: "Для разработчиков с базовыми знаниями фронтенда, которые хотят выйти на уровень Middle и укрепить свои позиции в IT." },
-            { question: "Какие навыки я получу?", answer: "Вы освоите современные инструменты и фреймворки, научитесь писать оптимизированный код и готовить проекты к продакшену." }
+            { question: "Какие навыки я получу?", answer: "Вы освоите современные инструменты и фреймворки, научитесь писать оптимизированный код и готовить проекты к продакшену." },
+            { question: "Сколько зарабатывает Middle?", answer: "Средний заработок Middle Frontend разработчика составляет около 180,000 руб/мес." }
         ],
-        
         program: [
             { module: "Вступительный модуль", topics: [
                 "Как эффективно проходить курс?", 
@@ -276,7 +335,35 @@ const courses = {
     },
     python: {
         title: "Junior Python Разработчик",
-        summa: ["29800", "9000"],
+        summa: ["17990", "5800"],
+        concurent: ["17,990", "169,000", "173,000", "214,000"],
+        cardsInfo: [
+            {
+                header: "Проекты на курсе",
+                description: "Реализуйте практические проекты на Python, которые помогут вам стать junior-разработчиком.",
+                listItems: [
+                    "Проект: Простой калькулятор (GUI)",
+                    "Проект: Умный калькулятор (GUI)",
+                    "Проект: API для управления задачами (To-Do List)",
+                    "Проект: Анализ данных и визуализация (графики)",
+                    "Проект: Генератор паролей",
+                    "Проект: Конвертер валют",
+                    "Проект: Игра 'Угадай число'",
+                    "Проект: Парсер со сбором данных с сайта",
+                    "... и другие"
+                ]
+            },
+            {
+                header: "Гарантия трудоустройства",
+                description: "Мы поможем вам найти первую работу в IT, если вы выполните все условия курса.",
+                listItems: [
+                    "Сданы все работы и тесты",
+                    "Завершён итоговый проект",
+                    "Соблюдены все рекомендации преподавателей",
+                    "Курс пройден на 100%"
+                ]
+            }
+        ],
         description: "Освойте Python для работы с данными и backend-разработки. Гарантия трудоустройтва и качество обучения.",
         nast: ["3", "от 1 до 2"],
         url: "https://andrey-university.getcourse.ru/page4",
@@ -291,7 +378,7 @@ const courses = {
         ],
         faq: [
             { question: "Кто такие Python разработчики?", answer: "Это специалисты, которые пишут код на Python для веба, анализа данных, автоматизации и AI." },
-            { question: "Сколько зарабатывает Junior?", answer: "Средний заработок Junior Python разработчика составляет около 50,000 руб/мес." }
+            { question: "Сколько зарабатывает Junior?", answer: "Средний заработок Junior Python разработчика составляет около 60,000 руб/мес." }
         ],
         program: [
             { module: "Вступительный модуль", topics: [
@@ -559,7 +646,15 @@ const courses = {
 
 };
 
-
+document.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            section.classList.add('visible');
+        }
+    });
+});
 
 
 // Отображаем информацию о курсе
@@ -569,6 +664,38 @@ if (course.nast) {
     wn.textContent = course.nast[0];
     nn.textContent = course.nast[1];
     summa.textContent = course.summa[0]
+    const coursesFirm = document.getElementsByClassName("courses-pract-off");
+    Array.from(coursesFirm).forEach((value, index) => {
+        coursesFirm[index].textContent = course.concurent[index];
+    });
+    course.cardsInfo.forEach((card, index) => {
+        const section = document.querySelector(`#section${index + 1}`);
+        if (section) {
+            // Заголовок
+            const header = section.querySelector(".header-section");
+            if (header) {
+                header.textContent = card.header;
+            }
+    
+            // Описание
+            const description = section.querySelector(".description-section");
+            if (description) {
+                description.textContent = card.description;
+            }
+    
+            // Список
+            const list = section.querySelector(".list-items-section");
+            if (list) {
+                list.innerHTML = ""; // Очистить текущий список
+                card.listItems.forEach(item => {
+                    const li = document.createElement("li");
+                    li.textContent = item;
+                    list.appendChild(li);
+                });
+            }
+        }
+    });
+
 } else {
     document.getElementsByClassName("mentor-section")[0].style.display = "none"
 }
@@ -644,3 +771,20 @@ function switchTab(tabId) {
     // Показываем соответствующий блок карточек
     document.getElementById(tabId).classList.remove('hidden');
 }
+
+const cards = document.querySelectorAll(".competitor-card");
+        let currentIndex = 0;
+
+        function rotateCards() {
+            // Снять класс "current" с текущей карточки
+            cards[currentIndex].classList.remove("current");
+
+            // Перейти к следующей карточке
+            currentIndex = (currentIndex + 1) % cards.length;
+
+            // Добавить класс "current" к новой карточке
+            cards[currentIndex].classList.add("current");
+}
+
+// Автоматическое переключение карточек каждые 5 секунд
+setInterval(rotateCards, 5000);

@@ -485,3 +485,180 @@ footer {
     }
   }
   
+  .comparison-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центровка по вертикали */
+    align-items: center; /* Центровка по горизонтали */
+    width: 100%;
+    border-radius: 12px;
+    padding: 60px 30px;
+    box-sizing: border-box; /* Учитываем padding в ширине */
+}
+
+.comparison-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center; /* Центровка текста */
+}
+
+.comparison-section-div{
+  background-color: #f1f1f1;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    max-width: 1200px; /* Максимальная ширина секции */
+    width: 100%;
+    gap: 30px; /* Расстояние между текстом и изображением */
+}
+
+.comparison-container {
+    display: flex;
+    justify-content: center; /* Центровка карточек */
+    align-items: center;
+    position: relative;
+
+    width: 100%;
+    max-width: 1200px; /* Ограничение максимальной ширины */
+}
+
+/* Карточка "Наш Курс" */
+.card-left {
+    width: 300px;
+    padding: 25px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #141414, #1e1e1e);
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    position: relative;
+    margin-right: 20px; /* Отступ между карточками */
+}
+
+.card-left h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card-left .price3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #27e827;
+    margin-bottom: 20px;
+}
+
+.card-left .features li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Карточка конкурентов */
+.competitor-container {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.competitor-card {
+    width: 100%;
+    padding: 25px;
+    border-radius: 20px; /* Закругленные углы */
+    background: #f1f1f1;
+    color: #333;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.6s;
+    opacity: 0;
+    transform: translateY(100%);
+    overflow: hidden; /* Гарантия закругления */
+}
+
+.competitor-card.current {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1;
+}
+
+.competitor-card.previous {
+    transform: translateY(-100%);
+}
+
+.competitor-card h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ff5757;
+}
+
+.competitor-card .price3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff5757;
+    margin-bottom: 20px;
+}
+
+.competitor-card .features li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+/* section  */
+#section1, #section2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  margin: 20px auto;
+  max-width: 1200px;
+  opacity: 0;
+  background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    max-width: 1200px; /* Максимальная ширина секции */
+    width: 100%;
+    gap: 30px; /* Расстояние между текстом и изображением */
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+#section1.visible, #section2.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.sec .image {
+  flex: 1;
+  padding: 10px;
+}
+.sec .image img {
+  width: 100%;
+  border-radius: 8px;
+}
+.sec .content {
+  flex: 1;
+  padding: 10px;
+}
+.sec .content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.sec .content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.sec .content ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+.sec .content ul li {
+  margin-bottom: 10px;
+}
