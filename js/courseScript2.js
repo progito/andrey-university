@@ -41,7 +41,7 @@ const courses = {
             }
         ],
         description: "Освойте востребованную профессию и начните карьеру в IT! Гарантия трудоустройтва и качество обучения.",
-        url: "https://andrey-university.getcourse.ru/jfrontend",
+        url: "https://forms.yandex.ru/u/674d782bd0468881a51223ea/",
         nast: ["4", "от 2 до 3"],
         tags: [
             { icon: "fa-solid fa-laptop-code", text: "Изучите HTML, CSS и JavaScript с нуля" },
@@ -202,7 +202,7 @@ const courses = {
             }
         ],
         description: "Освойте профессиональные навыки разработки, станьте Middle Frontend разработчиком и начните успешную карьеру в IT.",
-        url: "https://andrey-university.getcourse.ru/page5",
+        url: "https://forms.yandex.ru/u/674d782bd0468881a51223ea/",
         nast: ["5", "от 2 до 3"],
         tags: [
             { icon: "fa-solid fa-laptop-code", text: "Продвинутая работа с JavaScript" },
@@ -366,7 +366,7 @@ const courses = {
         ],
         description: "Освойте Python для работы с данными и backend-разработки. Гарантия трудоустройтва и качество обучения.",
         nast: ["3", "от 1 до 2"],
-        url: "https://andrey-university.getcourse.ru/page4",
+        url: "https://forms.yandex.ru/u/674d782bd0468881a51223ea/",
         tags: [
             { icon: "fa-solid fa-python", text: "Освойте Python для начинающих" },
             { icon: "fa-solid fa-database", text: "Научитесь работать с базами данных" },
@@ -473,7 +473,7 @@ const courses = {
     html: {
         title: "Основы HTML",
         description: "Изучите HTML с нуля и создадите свои первые веб-страницы. Подготовитесь к изучению frontend-разработки.",
-        url: "https://andrey-university.getcourse.ru/html",
+        url: "https://forms.yandex.ru/u/674d7c6e90fa7b825424c86b/",
         tags: [
             { icon: "fa-solid fa-code", text: "Изучите основы HTML" },
             { icon: "fa-solid fa-file-code", text: "Изучите структуры веб-страниц" },
@@ -515,7 +515,7 @@ const courses = {
     git: {
         title: "Основы Git",
         description: "Освойте Git с нуля и научитесь эффективно работать с GitHub/GitLab.",
-        url: "https://andrey-university.getcourse.ru/page6",
+        url: "https://forms.yandex.ru/u/674d7c6e90fa7b825424c86b/",
         tags: [
             { icon: "fa-solid fa-code-branch", text: "Изучите основы Git" },
             { icon: "fa-solid fa-cloud", text: "Работа с GitHub и GitLab" },
@@ -567,7 +567,7 @@ const courses = {
     pcjob: {
         title: "Основы работы с компьютером",
         description: "Освойте основные навыки работы с ПК, файловыми системами и базовыми программами.",
-        url: "https://andrey-university.getcourse.ru/page7",
+        url: "https://forms.yandex.ru/u/674d7c6e90fa7b825424c86b/",
         tags: [
             { icon: "fa-solid fa-desktop", text: "Навыки работы с ПК" },
             { icon: "fa-solid fa-folder-open", text: "Работа с файлами и папками" },
@@ -615,7 +615,7 @@ const courses = {
     ejob: {
         title: "Накрутка опыта работы",
         description: "Освойте навыки, которые помогут вам создать впечатляющее резюме с примерами выполненных проектов и имитацией коммерческого опыта.",
-        url: "https://andrey-university.getcourse.ru/page8",
+        url: "https://forms.yandex.ru/u/674d7c6e90fa7b825424c86b/",
         tags: [
             { icon: "fa-solid fa-briefcase", text: "Создание опыта для резюме" },
             { icon: "fa-solid fa-project-diagram", text: "Имитация коммерческих проектов" },
@@ -718,6 +718,9 @@ if (course) {
     });
     const btn = document.getElementById("buy");
     btn.addEventListener('click', ()=>{window.location.href=course.url})
+    const btn2 = document.getElementById("buy2");
+    
+    btn2.addEventListener('click', ()=>{window.location.href=course.url})
 
     // Training Program Section
     const programContainer = document.getElementById('course-program');
@@ -786,21 +789,6 @@ const cards = document.querySelectorAll(".competitor-card");
 
             // Добавить класс "current" к новой карточке
             cards[currentIndex].classList.add("current");
-}
-function searchVideos() {
-    const searchInput = document.getElementById("video-search-input").value.toLowerCase();
-    const videoCards = document.querySelectorAll(".video-card");
-
-    videoCards.forEach((card) => {
-        const title = card.dataset.title.toLowerCase();
-        const description = card.dataset.description.toLowerCase();
-
-        if (title.includes(searchInput) || description.includes(searchInput)) {
-            card.style.display = "flex";
-        } else {
-            card.style.display = "none";
-        }
-    });
 }
 
 // Автоматическое переключение карточек каждые 5 секунд

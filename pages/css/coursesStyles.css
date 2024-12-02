@@ -74,19 +74,7 @@
     font-size: 18px; /* Чуть меньший размер шрифта */
     margin-right: 10px; /* Отступ справа для расстояния между ценами */
   }
-  
-/* Уточнение для небольших экранов */
-@media (max-width: 768px) {
-    .course-controls {
-        flex-direction: column; /* Элементы друг под другом */
-        align-items: stretch; /* Растягиваем элементы на всю ширину */
-        gap: 15px;
-    }
 
-    .search-input {
-        max-width: 100%; /* Убираем ограничение ширины */
-    }
-}
 
 
 .sort-select {
@@ -316,19 +304,7 @@ footer {
     filter: grayscale(0%);
   }
   
-  /* Адаптивность */
-  @media (max-width: 768px) {
-    .footer-top {
-      flex-direction: column;
-      gap: 30px;
-    }
   
-    .footer-bottom {
-      flex-direction: column;
-      text-align: center;
-      gap: 10px;
-    }
-  }
   .promo-section {
     display: flex;
     justify-content: center; /* Центрирование по горизонтали */
@@ -465,25 +441,6 @@ footer {
     transform: scale(1.05); /* Легкое увеличение кнопки при наведении */
   }
   
-  /* Адаптивность */
-  @media (max-width: 768px) {
-    .promo-card {
-      padding: 30px 15px;
-    }
-  
-    .promo-content h2 {
-      font-size: 22px;
-    }
-  
-    .promo-content p {
-      font-size: 14px;
-    }
-  
-    .promo-button {
-      padding: 10px 20px;
-      font-size: 14px;
-    }
-  }
   
   .comparison-section {
     display: flex;
@@ -664,4 +621,88 @@ a {
 }
 .sec .content ul li {
   margin-bottom: 10px;
+}
+
+
+
+/* Общий медиазапрос для маленьких экранов */
+@media (max-width: 768px) {
+  /* Секция курсов */
+  .courses-section {
+      padding: 20px 10px;
+  }
+
+  /* Панель поиска и фильтрации */
+  .course-controls {
+      flex-direction: column; /* Перестраиваем элементы в столбик */
+      align-items: stretch; /* Растягиваем элементы по ширине */
+  }
+
+  .search-input,
+  .sort-select {
+      max-width: 100%; /* Занимают всю ширину */
+      margin-bottom: 10px; /* Добавляем отступы между элементами */
+  }
+
+  /* Карточки курсов */
+  .course-cards {
+      gap: 10px; /* Уменьшаем расстояние между карточками */
+  }
+
+  .course-card {
+      flex-direction: column; /* Карточки в виде столбца */
+      text-align: center; /* Центрируем текст */
+  }
+
+  .course-image {
+      width: 100px;
+      height: 100px;
+  }
+
+  .course-title {
+      font-size: 18px;
+  }
+
+  .course-description {
+      font-size: 12px;
+  }
+
+  /* Футер */
+  footer {
+      padding: 20px 10px;
+  }
+
+  .footer-container {
+      flex-direction: column; /* Футер перестраивается в столбик */
+      text-align: center;
+  }
+
+  .footer-policy {
+      margin-bottom: 10px;
+  }
+}
+
+/* Медиазапрос для средних экранов */
+@media (max-width: 1024px) {
+  .course-controls {
+      gap: 10px; /* Уменьшаем отступы */
+  }
+
+  .course-card {
+      padding: 15px;
+  }
+
+  .course-title {
+      font-size: 20px;
+  }
+
+  .promo-card {
+      max-width: 100%; /* Карточка растягивается */
+      padding: 20px;
+  }
+
+  .certificate-section {
+      width: auto;
+      margin: 30px 10px;
+  }
 }
