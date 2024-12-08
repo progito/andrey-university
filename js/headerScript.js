@@ -131,6 +131,6 @@ document.querySelector('.btn-primary').addEventListener('click', () => {
 })
 
 document.getElementsByClassName("login")[0].addEventListener('click', ()=>{
-    window.location.href="https://andrey-university.getcourse.ru/cms/system/login"
+    window.location.href="https://progito.github.io/lk-andrey-university/"
 })
 document.getElementsByClassName("signup")[0].addEventListener('click',()=>{location.href='#courses'})
