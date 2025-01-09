@@ -102,18 +102,6 @@ const courses = {
                 "Основы Webpack",
                 "ES6 Import/Export"
             ] },
-            { module: "Базово о Git/Github", topics: [
-                "Что такое Git/Github + установка и настройка", 
-                "Основы работы с Git", 
-                "Работа с Github",
-                "Github-репозитории",
-                "Понятие веток",
-                "Слияние веток",
-                "Решение конфликтов с ветками",
-                "Что такое Pull-Request?",
-                "Основы Gitflow",
-                "Fork + доступ к репозиторию по ssh",
-            ] },
             { module: "React", topics: [
                 "Введение в React", 
                 "Основы React",
