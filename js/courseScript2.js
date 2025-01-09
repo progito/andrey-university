@@ -10,8 +10,8 @@ const summa = document.getElementById("summa");
 const courses = {
     frontend: {
         title: "Junior Frontend Разработчик",
-        summa: ["23990", "7250"],
-        concurent: ["23,990", "199,500", "137,000", "140,000", "120,000"],
+        summa: ["25480", "7250"],
+        concurent: ["25,480", "199,500", "137,000", "140,000", "120,000"],
         cardsInfo: [
             {
                 header: "Проекты на курсе",
@@ -155,7 +155,6 @@ const courses = {
                 "Типы TypeScript",
                 "Работа с типами",
                 "Интерфейсы",
-                "TS-Generics",
                 "Интеграция в React"
             ] },
             { module: "Подготовка резюме/портфолио", topics: [
@@ -335,8 +334,8 @@ const courses = {
     // },
     python: {
         title: "Junior Python Разработчик",
-        summa: ["17990", "5800"],
-        concurent: ["17,990", "169,000", "173,000", "214,000", "100,000"],
+        summa: ["19480", "5800"],
+        concurent: ["19,480", "169,000", "173,000", "214,000", "100,000"],
         cardsInfo: [
             {
                 header: "Проекты на курсе",
