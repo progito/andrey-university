@@ -602,7 +602,7 @@ const courses = {
             ] }
         ]
     },
-    pcjob: {
+    ob: {
         title: "Основы программирования",
         description: "Освойте основные термины & навыки в программировании.",
         url: "https://forms.yandex.ru/u/674d7c6e90fa7b825424c86b/",
